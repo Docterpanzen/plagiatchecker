@@ -21,34 +21,6 @@ interface PlagiarismCheck {
   imports: [DecimalPipe],
 })
 export class Dashboard {
-  /*
-  ngOnInit() {
-    let x = 0,
-      y = 0;
-    let targetX = 0,
-      targetY = 0;
-
-    document.addEventListener('mousemove', (e) => {
-      targetX = e.clientX;
-      targetY = e.clientY;
-    });
-
-    const animate = () => {
-      x += (targetX - x) * 0.1;
-      y += (targetY - y) * 0.1;
-
-      const cat = document.getElementById('cat');
-      if (cat) {
-        cat.style.left = x + 'px';
-        cat.style.top = y + 'px';
-      }
-
-      requestAnimationFrame(animate);
-    };
-    animate();
-  }
-  */
-
   recentChecks: PlagiarismCheck[] = [
     {
       id: 1,

@@ -94,21 +94,12 @@ export class Input {
     reader.readAsText(file, 'utf-8');
   }
 
-  /** Entfernt Sonderzeichen aus dem Text.
-   *  – lässt nur Buchstaben, Zahlen und Whitespace durch
-   *  – reduziert Mehrfach-Leerzeichen
-   */
   private cleanText(text: string): string {
-    return (
-      text
-        // alles entfernen, was kein Buchstabe, keine Zahl, kein Whitespace ist
-        .replace(/[^\p{L}\p{N}\s]/gu, ' ')
-        // Mehrfach-Leerzeichen reduzieren
-        .replace(/\s+/g, ' ')
-        .trim()
-    );
-    // falls du alles klein willst:
-    // .toLowerCase();
+    return text
+      .replace(/[^\p{L}\p{N}\s]/gu, ' ')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .toLowerCase();
   }
 
   /** Umschalten zwischen bereinigt / original für eine Datei */

@@ -114,14 +114,13 @@
   </section>
   <!-- Main content: Recent checks -->
   <section class="grid gap-6 lg:grid-cols-3">
-    <!-- ... dein bisheriger Code bleibt unverändert ... -->
     <div
-      class="col-span-2 rounded-2xl border px-4 py-2 border-slate-800 hover:animate-pulse-glow hover:border-sky-500"
+      class="col-span-2 rounded-2xl border px-4 py-2 border-slate-800 hover:animate-glow-once hover:border-sky-500"
     >
       col Span 2
     </div>
     <div
-      class="rounded-2xl border px-4 py-2 border-slate-800 hover:animate-pulse-glow hover:border-sky-500"
+      class="rounded-2xl border px-4 py-2 border-slate-800 hover:animate-bounce hover:border-sky-500"
     >
       col Span 1
     </div>
@@ -141,8 +140,9 @@
         </p>
         <button
           (click)="goToInput()"
-          class="px-4 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 text-sm font-medium cursor-pointer"
+          class="px-4 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 text-sm font-medium cursor-pointer transition delay-100 hover:scale-110"
         >
+          <!--transition delay-100 hover:scale-110-->
           Neue Texte hinzufügen
         </button>
       </div>

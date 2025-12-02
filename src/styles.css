@@ -30,6 +30,7 @@
   }
 
   --animate-pulse-glow: pulse-glow 1.5s ease-in-out infinite;
+  --animate-glow-once: pulse-glow 1.5s ease-in-out;
 
   @keyframes pulse-glow {
     100% {
