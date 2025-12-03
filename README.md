@@ -1,59 +1,79 @@
-# Plagiatchecker
+# Textanalyse
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.9.
 
-## Development server
+## Inhaltsverzeichnis
 
-To start a local development server, run:
+- [Textanalyse](#textanalyse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [Kurzbeschreibung](#kurzbeschreibung)
+  - [Herunterladen relevanter Sachen](#herunterladen-relevanter-sachen)
+    - [Node.Js installieren](#nodejs-installieren)
+    - [Angular Cli installieren](#angular-cli-installieren)
+    - [Projektabhängigkeiten Installieren](#projektabhängigkeiten-installieren)
+    - [Projekt starten](#projekt-starten)
+  - [Fragen und Anregungen](#fragen-und-anregungen)
+
+## Kurzbeschreibung
+
+This Project is for the course Datenbasierte Methoden und Softwaredesign und kombiniert hierbei die Methoden von Datenbasierte Methoden und die Softwarestruktur und Arbeitsweise von Softwaredesign. Mehr dazu in der Angular App unter dem Reiter Dokumentation.
+
+Wie man die Angular App startet und alle zugehärigen Sachen runterlädt sind in folgendem beschrieben.
+
+## Herunterladen relevanter Sachen
+
+### Node.Js installieren
+
+Lade Node.Js herunter was die Laufzeitumgebung von JavaScript ist. Dies ist notwendig, damit man JavaScript und die ganze Angular App compilieren und auch außerhalb von der Webapp starten kann. [NodeJs](https://nodejs.org/) kann hier runtergeladen werden oder direkt in Windows PowerShell runtergeladen werden. Es geht hierbei auch similar mit Linux oder allen Unix-basierten Systemen, die Skripte müssen allerdings direkt auf der OpenJs oder NodeJs Seite nachgeschaut werden.
+
+PowerShell Skript:
+
+```bash
+winget install OpenJS.NodeJS.LTS
+```
+
+Prüfen:
+
+```bash
+node -v
+npm -v
+```
+
+### Angular Cli installieren
+
+```bash
+npm install -g @angular/cli
+```
+
+Prüfen:
+
+```bash
+ng version
+```
+
+### Projektabhängigkeiten Installieren
+
+```bash
+npm install
+
+npm i
+```
+
+### Projekt starten
+
+Entweder durch das Vorgefertigte NPM-Skript im Projekt welches in dem package.json liegt oder durch den Angular-Befehl
 
 ```bash
 ng serve
+ng serve -o (startet direkt die Webapp in einem Webbrowser)
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+sobald der Server läuft, öffne den Browser und navigiere zu `http://localhost:4200/`. Die Anwendung wird automatisch ne geladen, solbald Sie eine der Dateien des source-codes ändern.
 
-## Code scaffolding
+## Fragen und Anregungen
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Bei Fragen, Anregungen, Kritik, usw. meldet euch gerne bei einem von unseren Developern:
 
-```bash
-ng generate component component-name
-```
+[Oskar Klöpfer](http://github.com/Docterpanzen)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+[Can Kal](http://github.com/can)
