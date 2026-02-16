@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 
 # SQLite-Datenbank im backend-Ordner:
 # "sqlite:///./textanalyse.db" -> Datei heißt textanalyse.db im aktuellen Arbeitsverzeichnis
-DATABASE_URL = "sqlite:///./textanalyse.db"
+DATABASE_URL = "sqlite:///./db-volume-mnt/textanalyse.db"
 
 # check_same_thread=False ist für SQLite + FastAPI/Threading nötig
 engine = create_engine(

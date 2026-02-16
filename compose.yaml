@@ -13,3 +13,5 @@ services:
     image: textanalyse-backend
     ports:
       - "8000:8000"
+    volumes:
+      - ./backend/db-volume-mnt:/backend/db-volume-mnt
