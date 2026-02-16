@@ -39,7 +39,7 @@ Wie man die Angular App startet und alle zugehärigen Sachen runterlädt sind in
 docker compose up
 ```
 Startet Front- und Backend in je einem Container, wird bei erstmaliger Nutzung gebaut. 
-Angular Frontend ist über [localhost](http://localhost:4200/) erreichbar. Die Applikation funktioniert sobald das Backend die Meldung `Application startup complete` ausgibt.
+Angular Frontend ist über [localhost](http://localhost:4200/) erreichbar. Die Applikation funktioniert sobald der Backend-Container die Meldung `Application startup complete` ausgibt.
 
 Container können im Terminal mit der Tastenkombination <kbd>Strg</kbd>+<kbd>C</kbd> oder auch mit `docker compose down` gestoppt werden.
 ## Frontend Abhängigkeiten installieren und starten
